@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-starter",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@hapi/iron": "latest",
+    "@material-ui/core": "latest",
+    "clsx": "latest",
+    "cookie": "latest",
+    "next": "latest",
+    "next-connect": "latest",
+    "passport": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "swr": "latest",
+    "passport-custom": "latest"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "@types/next": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [],
+  "description": ""
+}
