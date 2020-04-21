@@ -8,7 +8,7 @@ const auth = nextConnect()
       name: "sess",
       secret: process.env.SESSION_SECRET,
       cookie: {
-        maxAge: 60 * 60 * 24, // 8 hours,
+        maxAge: 60 * 60 * 24, // 24 hours,
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
         path: "/",

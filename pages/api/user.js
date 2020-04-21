@@ -13,7 +13,7 @@ handler
     }
   })
   .get((req, res) => {
-    res.json({ user: req.user });
+    res.json({ session: req.session });
   });
 
 export default handler;
