@@ -7,13 +7,15 @@
     "@material-ui/core": "latest",
     "clsx": "latest",
     "cookie": "latest",
+    "fido2-lib": "git:github.com/jedrivisser/fido2-lib.git",
     "next": "latest",
     "next-connect": "latest",
     "passport": "latest",
+    "passport-custom": "latest",
     "react": "latest",
     "react-dom": "latest",
     "swr": "latest",
-    "passport-custom": "latest"
+    "graphql-request": "latest"
   },
   "scripts": {
     "dev": "next",
