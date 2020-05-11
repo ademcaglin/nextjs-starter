@@ -21,7 +21,7 @@ handler.use(auth).post(async (req, res) => {
     //console.log(req.session);
     //console.log(req.body);
     let attestationExpectations = {
-        challenge: /*req.session.registerChallenge*/crypto.randomBytes(32).toString('base64'),
+        challenge: req.session.registerChallenge,
         origin: "http://localhost:3000",
         factor: "either",
         rpId: process.env.FIDO2_RPID

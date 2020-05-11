@@ -35,6 +35,7 @@ handler.use(auth).post(async (req, res) => {
     req.session.registerChallenge = registerChallenge;
     req.session.registerChallengeTime = Date.now();
     var registrationOptions = await f2l.attestationOptions();
+    let base64String = btoa(String.fromCharCode(...new Uint8Array(registrationOptions.challenge)));
     registrationOptions.challenge = registerChallenge;
     registrationOptions.user.id = userId;
     registrationOptions.user.name = username;
